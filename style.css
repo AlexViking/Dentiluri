@@ -1,74 +1,76 @@
-/* Reset default browser styles */
-body, h1, h2, p, ul, li {
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Topbar styles */
-  header {
-    background-color: #f0f0f0;
-    padding: 20px;
-  }
-  
-  nav ul {
-    list-style: none;
-  }
-  
-  nav li {
-    display: inline;
-    margin-right: 10px;
-  }
-  
-  nav li a {
-    text-decoration: none;
-    color: #333;
-    padding: 5px;
-    border-radius: 5px;
-  }
-  
-  /* Main area styles */
-  main {
-    padding: 20px;
-  }
-  
-  section {
-    background-color: #fff;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-  }
-  
-  /* Footer styles */
-  footer {
-    background-color: #f0f0f0;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  /* Additional styles */
-  body {
-    font-family: Arial, sans-serif;
-  }
-  
 
-  /* Logo styles */
-  .logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
-  }
-
-  .logo img {
-    width: 36px;
-    height: 36px;
-  }
-
-  /* Responsive styles */
-  @media (min-width: 768px) {
-    .logo img {
-      width: 56px;
-      height: 56px;
+    /* Reset default browser styles */
+    body, h1, h2, p, ul, li {
+      margin: 0;
+      padding: 0;
     }
-  }
+
+    /* Topbar styles */
+    header {
+      background-color: #f0f0f0;
+      padding: 20px;
+    }
+
+    nav ul {
+      list-style: none;
+    }
+
+    nav li {
+      display: inline;
+      margin-right: 10px;
+    }
+
+    nav li a {
+      text-decoration: none;
+      color: #333;
+      padding: 5px;
+      border-radius: 5px;
+    }
+
+    /* Main area styles */
+    main {
+      padding: 20px;
+    }
+
+    section {
+      background-color: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+
+    /* Sidebar styles */
+    .sidebar {
+      position: fixed;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      background-color: #f0f0f0;
+      padding: 20px;
+    }
+
+    .sidebar ul {
+      list-style: none;
+    }
+
+    .sidebar li {
+      margin-bottom: 10px;
+    }
+
+    .sidebar li a {
+      text-decoration: none;
+      color: #333;
+    }
+
+    /* Responsive styles */
+    @media (max-width: 767px) {
+      .sidebar {
+        display: none;
+      }
+    }
+
+    /* Additional styles */
+    body {
+      font-family: Arial, sans-serif;
+    }
