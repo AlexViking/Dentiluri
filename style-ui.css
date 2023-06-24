@@ -10,6 +10,15 @@
     padding: 20px;
   }
 
+  nav {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+
   nav ul {
     list-style: none;
   }
@@ -42,6 +51,8 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
   }
+
+ 
 
   /* Sidebar styles */
   .sidebar {
@@ -76,4 +87,30 @@
   /* Additional styles */
   body {
     font-family: Arial, sans-serif;
+  }
+
+  .box {
+    width: 200px;
+    height: 100px;
+    border: 1px solid black;
+    overflow: hidden;
+  }
+
+  .text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .text::after {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 100%;
+    vertical-align: middle;
+  }
+
+  .text span {
+    display: inline-block;
+    vertical-align: middle;
   }
