@@ -1,4 +1,20 @@
-  function createSectionDivs() {
+// Loading
+
+window.addEventListener('load', function() {
+  var loadingScreen = document.querySelector('.loading-screen');
+  var content = document.getElementById('content');
+  
+  setTimeout(function() {
+    loadingScreen.style.display = 'none';
+    // content.classList.add('loaded');
+  }, 5000); // Adjust the delay as needed
+}); 
+ 
+
+
+// methods
+ 
+ function createSectionDivs() {
     const folderNames = [
         {
             name: '1#Introduction',
@@ -164,27 +180,5 @@ sidebarLinks.forEach((link) => {
   });
 });
 
-// const sidebarItems = document.querySelectorAll('.sidebarUiElement');
 
-// sidebarItems.forEach(item => {
-//   let hoverTimer;
 
-//   item.addEventListener('click', function(event) {
-//     // Prevent the link navigation on hover
-//     event.preventDefault();
-
-//     const link = this.querySelector('a');
-//     window.location.href = link.getAttribute('href');
-//   });
-
-//   item.addEventListener('mouseenter', function() {
-//     hoverTimer = setTimeout(function() {
-//       item.classList.add('slide-open');
-//     }, 3000);
-//   });
-
-//   item.addEventListener('mouseleave', function() {
-//     clearTimeout(hoverTimer);
-//     item.classList.remove('slide-open');
-//   });
-// });
