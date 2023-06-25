@@ -1,0 +1,28 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+	<title>New Project</title>
+	<defs>
+		<image  width="1280" height="720" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABQAAAALQAQMAAAD1s08VAAAAAXNSR0IB2cksfwAAAANQTFRF////p8QbyAAAAIdJREFUeJztwTEBAAAAwqD1T20JT6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeBrE3wABB8CymgAAAABJRU5ErkJggg=="/>
+		<filter x="-50%" y="-50%" width="200%" height="200%" id="f1" ><feDropShadow dx="32.91091657286267" dy="-30.689926202812437" stdDeviation="21.25" flood-color="#ffffff" flood-opacity="1"/></filter>
+		<filter x="-50%" y="-50%" width="200%" height="200%" id="f2" ><feDropShadow dx="-24.088701828918897" dy="26.753213717186192" stdDeviation="19.166666666666668" flood-color="#253f74" flood-opacity=".2"/></filter>
+		<filter x="-50%" y="-50%" width="200%" height="200%" id="f3" ><feDropShadow dx="32.91091657286267" dy="-30.689926202812437" stdDeviation="21.25" flood-color="#ffffff" flood-opacity="1"/></filter>
+		<filter x="-50%" y="-50%" width="200%" height="200%" id="f4" ><feDropShadow dx="-24.088701828918897" dy="26.753213717186192" stdDeviation="19.166666666666668" flood-color="#253f74" flood-opacity=".2"/></filter>
+		<filter x="-50%" y="-50%" width="200%" height="200%" id="f5" ><feDropShadow dx="32.91091657286267" dy="-30.689926202812437" stdDeviation="21.25" flood-color="#ffffff" flood-opacity="1"/></filter>
+		<filter x="-50%" y="-50%" width="200%" height="200%" id="f6" ><feDropShadow dx="-24.088701828918897" dy="26.753213717186192" stdDeviation="19.166666666666668" flood-color="#253f74" flood-opacity=".2"/></filter>
+	</defs>
+	<style>
+		.s0 { fill: #efeff3 } 
+		.s1 { filter: url(#f1) url(#f2);fill: #efeff3 } 
+		.s2 { filter: url(#f3) url(#f4);fill: #efeff3 } 
+		.s3 { filter: url(#f5) url(#f6);fill: #efeff3 } 
+	</style>
+	<use id="Background" href="#img1" x="0" y="0"/>
+	<g id="Shapes">
+		<g id="Intent">
+			<path id="Outer" class="s0" d="m1123.2 465.4c-57.7 0-104.4-46.8-104.4-104.5v-2.5c0-57.7 46.7-104.5 104.4-104.5 57.7 0 104.5 46.8 104.5 104.5v2.5c0 57.7-46.8 104.5-104.5 104.5z"/>
+			<path id="Inner" class="s1" d="m1123.2 431.9c-38.8 0-70.3-31.4-70.3-70.3v-1.7c0-38.8 31.5-70.3 70.3-70.3 38.8 0 70.3 31.5 70.3 70.3v1.7c0 38.9-31.5 70.3-70.3 70.3z"/>
+		</g>
+		<path id="Hybrid" class="s2" d="m835.4 466.7c-57.6 0-104.3-46.6-104.3-104.2v-2.8c0-57.6 46.7-104.3 104.3-104.3 57.6 0 104.3 46.7 104.3 104.3v2.8c0 57.6-46.7 104.2-104.3 104.2z"/>
+		<path id="Dip" class="s0" d="m514 465.4c-57.7 0-104.4-46.7-104.4-104.4v-2.7c0-57.7 46.7-104.4 104.4-104.4 57.6 0 104.4 46.7 104.4 104.4v2.7c0 57.7-46.8 104.4-104.4 104.4z"/>
+		<path id="Raised" class="s3" d="m192.4 466.5c-57.7 0-104.4-46.7-104.4-104.4v-2.7c0-57.6 46.7-104.4 104.4-104.4 57.7 0 104.4 46.8 104.4 104.4v2.7c0 57.7-46.7 104.4-104.4 104.4z"/>
+	</g>
+</svg>

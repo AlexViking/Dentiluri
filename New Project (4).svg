@@ -1,0 +1,11 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+	<title>New Project</title>
+	<defs>
+		<image  width="1280" height="720" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABQAAAALQAQMAAAD1s08VAAAAAXNSR0IB2cksfwAAAANQTFRF////p8QbyAAAAIdJREFUeJztwTEBAAAAwqD1T20JT6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeBrE3wABB8CymgAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+		.s0 { fill: #efeff3 } 
+	</style>
+	<use id="Background" href="#img1" x="0" y="0"/>
+	<path id="Dip" class="s0" d="m514 465.4c-57.7 0-104.4-46.7-104.4-104.4v-2.7c0-57.7 46.7-104.4 104.4-104.4 57.6 0 104.4 46.7 104.4 104.4v2.7c0 57.7-46.8 104.4-104.4 104.4z"/>
+</svg>

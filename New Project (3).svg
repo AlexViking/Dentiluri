@@ -1,0 +1,13 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+	<title>New Project</title>
+	<defs>
+		<image  width="1280" height="720" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABQAAAALQAQMAAAD1s08VAAAAAXNSR0IB2cksfwAAAANQTFRF////p8QbyAAAAIdJREFUeJztwTEBAAAAwqD1T20JT6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeBrE3wABB8CymgAAAABJRU5ErkJggg=="/>
+		<filter x="-50%" y="-50%" width="200%" height="200%" id="f1" ><feDropShadow dx="32.91091657286267" dy="-30.689926202812437" stdDeviation="21.25" flood-color="#ffffff" flood-opacity="1"/></filter>
+		<filter x="-50%" y="-50%" width="200%" height="200%" id="f2" ><feDropShadow dx="-24.088701828918897" dy="26.753213717186192" stdDeviation="19.166666666666668" flood-color="#253f74" flood-opacity=".2"/></filter>
+	</defs>
+	<style>
+		.s0 { filter: url(#f1) url(#f2);fill: #efeff3 } 
+	</style>
+	<use id="Background" href="#img1" x="0" y="0"/>
+	<path id="Raised" class="s0" d="m192.4 466.5c-57.7 0-104.4-46.7-104.4-104.4v-2.7c0-57.6 46.7-104.4 104.4-104.4 57.7 0 104.4 46.8 104.4 104.4v2.7c0 57.7-46.7 104.4-104.4 104.4z"/>
+</svg>

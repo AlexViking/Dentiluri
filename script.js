@@ -29,7 +29,7 @@
             colorShadow: 'value'
           },
           {
-            name: '5#Info',
+            name: '5#AppointmentInfo',
             title: 'Appointment Info',
             description: 'This is the appointment info section.',
             size: { x: '90vw', y: '90vh' },
@@ -47,23 +47,23 @@
   
     // Create div sections based on the folder objects and append them to the main element
     const mainElement = document.querySelector('main');
-    folderNames.forEach((folder) => {
+    folderNames.forEach((folder, index) => {
       const sectionId = folder.name.split('#')[1];
       const sectionDiv = document.createElement('section');
       sectionDiv.setAttribute('id', sectionId);
-      sectionDiv.setAttribute('class', "box");
+      sectionDiv.setAttribute('class', `Dip-Shadow`);
       // Apply the size of the div based on the `size` property
       sectionDiv.style.minWidth = folder.size.x;
       sectionDiv.style.minHeight = folder.size.y;
 
       //background color
-      sectionDiv.style.backgroundColor = "rgb(199 211 213)";
+      // sectionDiv.style.backgroundColor = "rgb(199 211 213)";
   
       // Create and append the title (h1) element
       const titleElement = document.createElement('h1');
       titleElement.textContent = folder.title;
       titleElement.style.fontSize = '10em';
-      titleElement.style.color = "rgb(145 151 149)"
+      // titleElement.style.color = "rgb(145 151 149)"
       titleElement.style.userSelect = 'none';
       titleElement.setAttribute('class', "text");
       sectionDiv.appendChild(titleElement);
@@ -95,9 +95,13 @@
 
     // Generate the sidebar navigation
   const sidebarElement = document.querySelector('.sidebar');
+  sidebarElement.setAttribute('class', 'sidebar Dip-Shadow ');
   const sidebarUlElement = document.createElement('ul');
+  
   folderNames.forEach((folder) => {
     const listItem = document.createElement('li');
+    listItem.setAttribute('class', 'sidebarUiElement');
+    listItem.setAttribute('data-tooltip', `${folder.title}`);
     const anchor = document.createElement('a');
     anchor.href = `#${folder.name.split('#')[1]}`;
     anchor.innerHTML = `<i class="fas ${getIconClass(folder.name)}"></i><span>${folder.title}</span>`;
@@ -112,7 +116,7 @@
       '1#Introduction': 'fa-home',
       '2#TeamAndPlace': 'fa-users',
       '3#Service': 'fa-cogs',
-      '4#CalendarAppointment': 'fa-calendar-alt',
+      '4#Calendar': 'fa-calendar',
       '5#AppointmentInfo': 'fa-info-circle'
       // Add more mappings for additional folder names and icon classes
     };
@@ -124,3 +128,63 @@
   
   
 
+  const links = document.querySelectorAll('header nav a');
+
+  links.forEach((link) => {
+    link.addEventListener('click', (event) => {
+      event.preventDefault();
+  
+      const target = document.querySelector(link.getAttribute('href'));
+      const offset = 50; // Adjust the value as needed
+  
+      window.scrollTo({
+        top: target.offsetTop - offset,
+        behavior: 'smooth'
+      });
+    });
+  });
+
+  //onst sidebarLinks = document.querySelectorAll('.sidebar a');
+  const sidebarLinks = document.querySelectorAll('.sidebar a');
+    // sidebarLinks.forEach((link) => {
+    //   link.addEventListener('click', scrollToTarget);
+    // });
+
+sidebarLinks.forEach((link) => {
+  link.addEventListener('click', (event) => {
+    event.preventDefault();
+
+    const target = document.querySelector(link.getAttribute('href'));
+    const offset = 50; // Adjust the value as needed
+
+    window.scrollTo({
+      top: target.offsetTop - offset,
+      behavior: 'smooth'
+    });
+  });
+});
+
+// const sidebarItems = document.querySelectorAll('.sidebarUiElement');
+
+// sidebarItems.forEach(item => {
+//   let hoverTimer;
+
+//   item.addEventListener('click', function(event) {
+//     // Prevent the link navigation on hover
+//     event.preventDefault();
+
+//     const link = this.querySelector('a');
+//     window.location.href = link.getAttribute('href');
+//   });
+
+//   item.addEventListener('mouseenter', function() {
+//     hoverTimer = setTimeout(function() {
+//       item.classList.add('slide-open');
+//     }, 3000);
+//   });
+
+//   item.addEventListener('mouseleave', function() {
+//     clearTimeout(hoverTimer);
+//     item.classList.remove('slide-open');
+//   });
+// });
